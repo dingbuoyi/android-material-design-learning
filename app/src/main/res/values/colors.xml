@@ -3,4 +3,17 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="divide_line_color">#ebe6e8</color>
+
+    <color name="text_color_grey">#7E8890</color>
+    <color name="text_color_grey_4">#c3b2b5</color>
+    <color name="text_color_grey_5">#998189</color>
+
+    <color name="purple_middle">#5E2447</color>
+    <color name="bar_color">#410035</color>
+    <color name="light_mauve">#F7F5F5</color>
+    <color name="purple">#310028</color>
+
+
 </resources>
