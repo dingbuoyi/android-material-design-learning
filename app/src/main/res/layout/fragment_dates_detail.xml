@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar_layout"
+        android:id="@+id/appbarLayout"
         android:layout_width="match_parent"
         android:layout_height="202dp"
         android:fitsSystemWindows="true">
@@ -57,10 +57,25 @@
                 android:layout_height="68dp">
                 <!-- in the design it should be 270 ,but in the real world 278 is more fit -->
 
+                <com.github.siyamed.shapeimageview.DiamondImageRoundCornerView
+                    android:id="@+id/userAvatarImage"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:adjustViewBounds="true"
+                    android:focusable="false"
+                    android:layout_marginLeft="16dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/avatar"
+                    app:siBorderColor="@android:color/white"
+                    app:siBorderWidth="2dp" />
+
                 <TextView
                     android:id="@+id/nickNameText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/userAvatarImage"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="4dp"
                     android:layout_marginTop="14dp"
@@ -79,6 +94,7 @@
                     android:textSize="16sp" />
 
                 <TextView
+                    android:layout_toRightOf="@+id/userAvatarImage"
                     android:id="@+id/datesTimeText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -117,28 +133,13 @@
                 android:id="@+id/datesDescText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
+                android:layout_marginBottom="30dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="30dp"
                 android:lineSpacingExtra="6sp"
                 android:text="Date description , le Lorem Ipsum est tout simplement du faux texte employé dans la composition et la mise en page avant impression."
                 android:textColor="@color/text_color_grey" />
-
-            <!-- apply btn -->
-            <TextView
-                android:id="@+id/applyForDatesBtn"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginBottom="22dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@drawable/purple_dark_round_button_bg_selected"
-                android:gravity="center"
-                android:lineSpacingExtra="4sp"
-                android:text="APPLY &amp; LEAVE A COMMENT"
-                android:textColor="@android:color/white"
-                android:textSize="12sp" />
 
             <!-- location desc -->
             <RelativeLayout
@@ -186,18 +187,42 @@
             <ImageView
                 android:id="@+id/googleMapImage"
                 android:layout_width="match_parent"
-                android:layout_height="246dp"
+                android:layout_height="440dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/swift" />
+                android:src="@drawable/swim" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
-                android:layout_marginBottom="60dp"/>
+                android:layout_marginBottom="60dp" />
 
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
+
+    <!--<com.github.siyamed.shapeimageview.DiamondImageRoundCornerView-->
+    <!--android:id="@+id/userAvatarImage"-->
+    <!--android:layout_width="44dp"-->
+    <!--android:layout_height="44dp"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_marginTop="180dp"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:focusable="false"-->
+    <!--app:siBorderWidth="2dp"-->
+    <!--app:siBorderColor="@android:color/white"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--android:src="@drawable/swift" />-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_anchor="@id/appbarLayout"
+        app:layout_anchorGravity="bottom|right|end" />
+
 
 </android.support.design.widget.CoordinatorLayout>
