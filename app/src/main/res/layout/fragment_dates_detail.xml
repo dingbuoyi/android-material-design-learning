@@ -201,20 +201,6 @@
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
-    <!--<com.github.siyamed.shapeimageview.DiamondImageRoundCornerView-->
-    <!--android:id="@+id/userAvatarImage"-->
-    <!--android:layout_width="44dp"-->
-    <!--android:layout_height="44dp"-->
-    <!--android:layout_gravity="right"-->
-    <!--android:layout_marginRight="16dp"-->
-    <!--android:layout_marginTop="180dp"-->
-    <!--android:adjustViewBounds="true"-->
-    <!--android:focusable="false"-->
-    <!--app:siBorderWidth="2dp"-->
-    <!--app:siBorderColor="@android:color/white"-->
-    <!--android:scaleType="fitCenter"-->
-    <!--android:src="@drawable/swift" />-->
-
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
