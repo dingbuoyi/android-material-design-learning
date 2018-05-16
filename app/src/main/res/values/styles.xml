@@ -17,4 +17,30 @@
         <item name="android:shadowRadius">10</item>
     </style>
 
+    <style name="AppTheme.Toolbar.CollapsedTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTheme.Toolbar.ExpandedTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDy">20</item>
+        <item name="android:shadowRadius">10</item>
+    </style>
+
+    <style name="AppTheme.Toolbar.CollapsedSubTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.Toolbar.ExpandedSubTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDy">20</item>
+        <item name="android:shadowRadius">10</item>
+    </style>
+
 </resources>

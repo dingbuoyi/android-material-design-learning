@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- first block user info , date time , distance -->
+            <RelativeLayout
+                android:id="@+id/datesDetailBlock1"
+                android:layout_width="match_parent"
+                android:layout_height="278dp">
+                <!-- in the design it should be 270 ,but in the real world 278 is more fit -->
+
+                <ImageView
+                    android:id="@+id/datesBannerImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="202dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/swift" />
+
+                <TextView
+                    android:id="@+id/nickNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/datesBannerImage"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Username,"
+                    android:textColor="@color/purple_middle"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userAgeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/datesBannerImage"
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@+id/nickNameText"
+                    android:text="23"
+                    android:textColor="@color/purple_middle"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/datesTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/divideLine"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="12/10/2018 at 18:50"
+                    android:textColor="@color/text_color_grey_4"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/datesDistanceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/divideLine"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="10.000 km"
+                    android:textColor="@color/text_color_grey_4"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/divideLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/divide_line_color" />
+
+                <com.github.siyamed.shapeimageview.DiamondImageRoundCornerView
+                    android:id="@+id/userAvatarImage"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="180dp"
+                    android:adjustViewBounds="true"
+                    android:focusable="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/swift"
+                    app:siBorderColor="@android:color/white"
+                    app:siBorderWidth="2dp" />
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="130dp"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Participate to a funny dance class️"
+                    android:textAppearance="@style/AppTheme.Toolbar.ExpandedTitle" />
+
+            </RelativeLayout>
+
+            <!-- date desc -->
+            <TextView
+                android:id="@+id/datesDescText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="6sp"
+                android:text="Date description , le Lorem Ipsum est tout simplement du faux texte employé dans la composition et la mise en page avant impression."
+                android:textColor="@color/text_color_grey" />
+
+            <!-- apply btn -->
+            <TextView
+                android:id="@+id/applyForDatesButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/purple_dark_round_button_bg_selected"
+                android:gravity="center"
+                android:lineSpacingExtra="4sp"
+                android:text="APPLY &amp; LEAVE A COMMENT"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <!-- location desc -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:lineSpacingExtra="2sp"
+                    android:text="LOCATION"
+                    android:textColor="@color/text_color_grey_5"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center|right"
+                    android:text="Barcelona"
+                    android:textColor="@color/text_color_grey_4"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/light_mauve_round_bg"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:padding="16dp"
+                android:text="The location of this date will be reveal to you if you are chosen by his creator, you will be then able to chat for free."
+                android:textColor="@color/text_color_grey_4"
+                android:textSize="14sp" />
+
+            <!-- map -->
+            <ImageView
+                android:id="@+id/googleMapImage"
+                android:layout_width="match_parent"
+                android:layout_height="440dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/swim" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginBottom="60dp" />
+
+        </LinearLayout>
+
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/common_tool_bar"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:subtitleTextAppearance="@style/AppTheme.Toolbar.CollapsedSubTitle"
+        app:titleTextAppearance="@style/AppTheme.Toolbar.CollapsedTitle" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+    <!-- app:theme="@style/Toolbar"  -->
+</FrameLayout>

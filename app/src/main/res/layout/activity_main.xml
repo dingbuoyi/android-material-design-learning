@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/details_fragment"
-        class="me.dean.android.material.design.learning.fragment.DatesDetailFragment"
+        class="me.dean.android.material.design.learning.fragment.DatesDetailFragment4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
